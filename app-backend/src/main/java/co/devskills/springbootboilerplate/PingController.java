@@ -8,9 +8,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class PingController {
 
+
     @GetMapping(value = "/ping")
     @ResponseStatus(HttpStatus.OK)
     public String healthCheck(){
-        return "pong";
+        return "ping-pong";
     }
 }
